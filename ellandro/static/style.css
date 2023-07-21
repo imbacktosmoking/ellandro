@@ -1,0 +1,35 @@
+.c-item{
+ height: 480px;
+}
+
+.c-img{
+    height: 100%;
+    object-fit: cover;
+    
+}
+
+.c-item2{
+ height: 480px;
+}
+
+.c-img2{
+    height: 100%;
+    object-fit: cover;
+    
+}
+
+.c-item3{
+ height: 480px;
+}
+
+.c-img3{
+    height: 100%;
+    object-fit: cover;
+    
+}
+
+.c-link1{
+     position: absolute;
+  top: 80px;
+  right: 0;
+}

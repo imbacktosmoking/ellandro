@@ -1,0 +1,135 @@
+{%extends 'base.html'%}
+{% load static %}
+
+
+{%block content%}
+<!DOCTYPE html>
+<html>
+<body>
+<link rel="stylesheet" type="text/css" href="{% static 'style.css' %}">
+<style>
+
+    body{
+           background-color: rgb(255, 255, 255); 
+    }
+</style>
+
+<!-- first half of the page -->
+
+<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="true">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active c-item">
+      <img src="{% static 'farm.jpg' %}" class="d-block c-image" alt="Slide 1">
+      <div class="carousel-caption d-none d-md-block">
+        <p>organic and cruelty free<p>
+        <h1> Ellandro Cacao</h1>
+        <button class="btn btn-primary"> Contact us </button>
+      </div>
+    </div>
+    <div class="carousel-item c-item2">
+      <img src="{% static 'farm2.jpg' %}" class="d-block c-image2 w-100 " alt="Slide 2">
+      <div class="carousel-caption d-none d-md-block">
+        <p>organic and cruelty free<p>
+          <h1> Ellandro Cacao</h1>
+               <button class="btn btn-primary"> Contact us </button>
+      </div>
+    </div>
+    <div class="carousel-item c-item">
+      <img src="{% static 'raw.jpg'%}" class="d-block c-image3 w-100 " alt="Slide 3">
+      <div class="carousel-caption d-none d-md-block">
+        <p>organic and cruelty free<p>
+          <h1> Ellandro Cacao</h1>
+               <button class="btn btn-primary"> Contact us </button>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+
+
+<!-- first half of the page -->
+<section id="learn" class="p-5"> 
+
+  <div class="container">
+<div class="row alignment-items-center.justify-content-between">
+<div class="col-md">
+<h1 class="text-center"> Welcome to Ellandro cacao </h1>
+<h4 class="text-center"> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." </h4>
+ 
+</div>
+ <img class="img fluid w-100" img src="{% static 'farm.jpg' %}" alt="Background Image" /> 
+<div class="col-md p-5">
+  
+</div>
+</div>
+  </div>
+</section>
+
+</br>
+<!-- Second part -->
+<section id="learn" class="p-5"> 
+
+  <div class="container">
+<div class="row alignment-items-center.justify-content-between">
+<div class="col-md">
+
+  <img class="img fluid w-100" img src="{% static 'raw.jpg' %}" alt="Background Image" /> 
+</div>
+<div class="col-md p-5">
+  <h1 class="text-center"> Our cocoa beans are organic</h1>
+<h4 class="text-center"> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." </h4>
+</div>
+</div>
+  </div>
+</section>
+<!-- Third Part -->
+<section id="learn" class="p-5"> 
+
+  <div class="container">
+<div class="row alignment-items-center.justify-content-between">
+<div class="col-md">
+    <h1 class="text-center"> Our cocoa beans are organic</h1>
+<h4 class="text-center"> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." </h4>
+</div>
+<div class="col-md p-5">
+  <img class="img fluid w-100" img src="{% static 'farm2.jpg' %}" alt="Background Image" />
+</div>
+</div>
+  </div>
+</section>
+
+</br>
+<!-- third part -->
+<section id="learn" class="p-5"> 
+
+  <div class="container">
+<div class="row alignment-items-center.justify-content-between">
+<div class="col-md">
+
+  <img class="img fluid w-100" img src="{% static 'raw.jpg' %}" alt="Background Image" /> 
+</div>
+<div class="col-md p-5">
+  <h1 class="text-center"> Our cocoa beans are organic</h1>
+<h4 class="text-center"> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum" <a href="products">     next page </a>
+</div>
+</div>
+  </div>
+</section>
+
+
+</html>
+</body>
+{%endblock%}

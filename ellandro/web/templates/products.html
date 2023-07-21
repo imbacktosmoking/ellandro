@@ -1,0 +1,73 @@
+{% extends 'base.html'%}
+{% load static%}
+{% block content%}
+
+<!DOCTYPE html>
+<html>
+<body>
+<link rel="stylesheet" type="text/css" href="{% static 'styles.css' %}">
+
+<style>
+
+    body{
+        background-color: rgb(255, 255, 255);
+    }
+</style>
+<h1 class="text-center"> Our Products </h1>
+<!-- first product -->
+<section id="learn" class="p-5"> 
+
+  <div class="container">
+<div class="row alignment-items-center.justify-content-between">
+<div class="col-md">
+
+  <img class="img fluid w-100" img src="{% static 'cacaoebeans.jpg' %}" alt="Background Image" /> 
+</div>
+<div class="col-md p-5">
+  <h1 class="text-center"> Cacao beans</h1>
+<h4 class="text-center"> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." </h4>
+</div>
+</div>
+  </div>
+</section>
+</body>
+</html>
+<!-- second product-->
+<section id="learn" class="p-5"> 
+
+  <div class="container">
+<div class="row alignment-items-center.justify-content-between">
+<div class="col-md">
+    <h1 class="text-center"> Cacao powder</h1>
+<h4 class="text-center"> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." </h4>
+</div>
+<div class="col-md p-5">
+  <img class="img fluid w-100" img src="{% static 'cacaopowder.jpg' %}" alt="Background Image" />
+</div>
+</div>
+  </div>
+</section>
+<!-- third product -->
+<section id="learn" class="p-5"> 
+
+  <div class="container">
+<div class="row alignment-items-center.justify-content-between">
+<div class="col-md">
+
+  <img class="img fluid w-100" img src="{% static 'tablea.webp' %}" alt="Background Image" /> 
+</div>
+<div class="col-md p-5">
+  <h1 class="text-center"> Tablea</h1>
+<h4 class="text-center"> "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."     <a href="{% url 'contact_page'%}">      next page </a> 
+</div>
+</div>
+  </div>
+</section>
+<!-- last part -->
+
+</div>
+</div>
+</body>
+</html>
+
+{% endblock%}
